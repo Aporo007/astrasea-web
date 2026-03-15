@@ -230,7 +230,7 @@ export default function AstraSeaBrandPerfect() {
         </nav>
 
         <section id="home" style={{ height: '100vh', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <video autoPlay loop muted playsInline style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.3 }}>
+          <video autoPlay loop muted playsInline preload="auto" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.3 }}>
             <source src="/images/v1.mp4" type="video/mp4" />
           </video>
           <div style={{ zIndex: 10, textAlign: 'center', padding: '0 20px', width: '100%' }}>
@@ -308,7 +308,7 @@ export default function AstraSeaBrandPerfect() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '60px' }}>
               <div>
                 <h2 style={{ fontSize: '22px', color: '#60a5fa', marginBottom: '30px' }}>{content.contact.title}</h2>
-                <form action="https://formspree.io/f/mwvrnokr" method="POST" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                <form action="https://formspree.io/f/blackowl0898@gmail.com" method="POST" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                   <input name="name" required placeholder={content.contact.pName} style={{ padding: '16px', background: '#0a1f3d', border: 'none', borderRadius: '10px', color: '#fff', fontSize: '13px' }} />
                   <input name="contact" required placeholder={content.contact.pTel} style={{ padding: '16px', background: '#0a1f3d', border: 'none', borderRadius: '10px', color: '#fff', fontSize: '13px' }} />
                   <textarea name="message" required placeholder={content.contact.pMsg} rows={4} style={{ padding: '16px', background: '#0a1f3d', border: 'none', borderRadius: '10px', color: '#fff', fontSize: '13px' }}></textarea>
